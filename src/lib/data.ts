@@ -1,0 +1,73 @@
+import { techIcons } from '@/components/icons/tech-icons';
+
+export const skills = [
+  { name: 'C', icon: techIcons['C'] },
+  { name: 'C++', icon: techIcons['C++'] },
+  { name: 'Java', icon: techIcons['Java'] },
+  { name: 'Python', icon: techIcons['Python'] },
+  { name: 'JavaScript', icon: techIcons['JavaScript'] },
+  { name: 'MERN Stack', icon: techIcons['MERN'] },
+  { name: 'Next.js', icon: techIcons['Next.js'] },
+  { name: 'Tailwind CSS', icon: techIcons['TailwindCSS'] },
+  { name: 'Framer Motion', icon: techIcons['Framer Motion'] },
+  { name: 'DaisyUI', icon: techIcons['DaisyUI'] },
+  { name: 'Axios', icon: techIcons['Axios'] },
+  { name: 'Lucide React', icon: techIcons['Lucide React'] },
+];
+
+export const projects = [
+  {
+    title: 'Password Manager – MLA Pass',
+    description: 'A secure and user-friendly password manager application built to store and manage credentials safely.',
+    tech: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
+    imageUrl: 'https://picsum.photos/400/300',
+    aiHint: 'password security',
+    githubUrl: 'https://github.com/MLAPrince/mla-pass',
+    liveUrl: 'https://mla-pass.vercel.app/',
+  },
+  {
+    title: 'My Notes App',
+    description: 'A simple and intuitive note-taking application for organizing thoughts and ideas seamlessly.',
+    tech: ['Next.js', 'Tailwind CSS', 'JavaScript'],
+    imageUrl: 'https://picsum.photos/400/301',
+    aiHint: 'notes app',
+    githubUrl: 'https://github.com/MLAPrince/my-notes',
+    liveUrl: 'https://my-notes-alpha-kohl.vercel.app/',
+  },
+  {
+    title: 'Spotify Clone',
+    description: 'A functional clone of the Spotify web player, showcasing music playback and playlist management.',
+    tech: ['React', 'JavaScript'],
+    imageUrl: 'https://picsum.photos/400/302',
+    aiHint: 'music player',
+    githubUrl: 'https://github.com/MLAPrince/spotify-clone',
+    liveUrl: 'https://spotify-clone-mu-three.vercel.app/',
+  },
+  {
+    title: 'Todo App',
+    description: 'A classic to-do list application to help manage tasks efficiently with a clean interface.',
+    tech: ['React', 'JavaScript', 'CSS'],
+    imageUrl: 'https://picsum.photos/401/300',
+    aiHint: 'todo list',
+    githubUrl: 'https://github.com/MLAPrince/Todo-App-React',
+    liveUrl: 'https://todo-app-react-delta-lac.vercel.app/',
+  },
+  {
+    title: 'Dragon Real Estate Regressor',
+    description: 'A machine learning project that predicts real estate prices using regression models.',
+    tech: ['Python', 'Machine Learning'],
+    imageUrl: 'https://picsum.photos/401/301',
+    aiHint: 'real estate',
+    githubUrl: 'https://github.com/MLAPrince',
+    liveUrl: '#',
+  },
+  {
+    title: 'Java Swing Projects',
+    description: 'Early projects including a calculator and file explorer built with Java Swing to learn GUI development.',
+    tech: ['Java'],
+    imageUrl: 'https://picsum.photos/401/302',
+    aiHint: 'java code',
+    githubUrl: '#',
+    liveUrl: '#',
+  },
+];
