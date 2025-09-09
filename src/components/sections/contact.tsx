@@ -11,7 +11,7 @@ import { Github, Linkedin, Mail, Send } from 'lucide-react';
 import { useFormState, useFormStatus } from 'react-dom';
 import { submitContactForm } from '@/actions/contact';
 import { useToast } from '@/hooks/use-toast';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const socialLinks = [
   { icon: Github, href: 'https://github.com/MLAPrince' },
