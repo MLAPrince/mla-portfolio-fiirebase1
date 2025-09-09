@@ -25,7 +25,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
+      setScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -36,8 +36,8 @@ export default function Header() {
       <ScrollProgress />
       <header
         className={cn(
-          'sticky top-0 z-40 w-full transition-all duration-300',
-          scrolled ? 'py-2' : 'py-4'
+          'fixed top-0 z-40 w-full transition-all duration-300',
+           scrolled ? 'py-2' : 'py-4'
         )}
       >
         <div
