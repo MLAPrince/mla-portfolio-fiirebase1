@@ -1,14 +1,20 @@
 "use client";
 
-import React from 'react';
+import React, { useRef } from 'react';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
 import CustomCursor from '@/components/shared/custom-cursor';
 
+export const HeroBoundaryContext = React.createContext<React.RefObject<HTMLElement> | null>(null);
+
 export function Providers({ children }: { children: React.ReactNode }) {
+  const heroRef = useRef<HTMLElement>(null);
+  
   return (
     <NextThemesProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-      {children}
-      {/* <CustomCursor /> */}
+      <HeroBoundaryContext.Provider value={heroRef}>
+        {children}
+        <CustomCursor boundsRef={heroRef} />
+      </HeroBoundaryContext.Provider>
     </NextThemesProvider>
   );
 }

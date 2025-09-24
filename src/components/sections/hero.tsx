@@ -5,7 +5,8 @@ import { ArrowDown } from 'lucide-react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import HeroBackground from '../3d/hero-background';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext, useRef } from 'react';
+import { HeroBoundaryContext } from '../providers';
 
 const subtitles = ["Aspiring Software Engineer", "MERN Developer", "Tech Enthusiast"];
 
@@ -48,8 +49,14 @@ const Typewriter = () => {
 
 
 export default function Hero() {
+  const heroBoundaryRef = useContext(HeroBoundaryContext);
+
   return (
-    <section id="home" className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+    <section 
+      id="home" 
+      ref={heroBoundaryRef}
+      className="relative w-full h-screen flex items-center justify-center overflow-hidden"
+    >
       <HeroBackground />
       <div className="relative z-10 text-center px-4">
         <motion.h1 
